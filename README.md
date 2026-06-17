@@ -33,6 +33,8 @@ So, the message **"HELLO WORLD"** with a shift of 3 would become **"KHOOR ZRUOG"
 - During decryption, each letter in the encrypted message is shifted backward in the alphabet by the key value.
 - The shift wraps around the alphabet, meaning if we go past Z, we loop back to A.
 
+## [Back to Content](https://github.com/thechiragvaishnav-dotcom/Cryptographic-Fundamentals-Caesar-Cipher-/blob/main/README.md#content)
+
 ## Implementation of Caesar Cipher
 Let's dive into the Python code that implements this algorithm. We'll explain each part in detail so that you understand not only how the code works, but also why it works.
 
@@ -73,6 +75,8 @@ def encrypt_decrypt(text, mode, key):
 - Depending on whether it's an uppercase or lowercase letter, we find the new position after applying the shift and convert it back to a character using <code>chr()</code>.
 - If the character is not a letter (e.g., spaces or punctuation), we leave it unchanged and add it to the result.
 
+## [Back to Content](https://github.com/thechiragvaishnav-dotcom/Cryptographic-Fundamentals-Caesar-Cipher-/blob/main/README.md#content)
+
 ## Getting a Valid Key
 
 <pre><code>def get_valid_key():
@@ -88,6 +92,8 @@ def encrypt_decrypt(text, mode, key):
 </code></pre>
 
 The <code>get_valid_key()</code> function ensures that the user inputs a valid key between 1 and 25. If the input is invalid (either not a number or outside the acceptable range), the program will prompt the user to try again. This function prevents errors due to incorrect user input.
+
+## [Back to Content](https://github.com/thechiragvaishnav-dotcom/Cryptographic-Fundamentals-Caesar-Cipher-/blob/main/README.md#content)
 
 ## Main Function
 
@@ -131,6 +137,8 @@ The program presents a simple menu where the user can choose to encrypt a messag
 - When a user chooses option 2, the user inputs the encrypted text and the key used for encryption, the program calls <code>encrypt_decrypt()</code> with mode <code>d</code> for decryption and displays the original message.
 - When a user chooses option 3, the program terminates.
 
+## [Back to Content](https://github.com/thechiragvaishnav-dotcom/Cryptographic-Fundamentals-Caesar-Cipher-/blob/main/README.md#content)
+
 ## [Final Code: Password Strength Checker](Caesar_Cipher.py)
 
 ## Program in Action
@@ -149,3 +157,5 @@ While the Caesar Cipher is an excellent learning tool, it's crucial to understan
 In this tutorial, we’ve implemented a Caesar Cipher in Python that allows users to both encrypt and decrypt messages.
 
 Happy coding, and stay secure!
+
+## [Back to Content](https://github.com/thechiragvaishnav-dotcom/Cryptographic-Fundamentals-Caesar-Cipher-/blob/main/README.md#content)
